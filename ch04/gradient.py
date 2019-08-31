@@ -44,11 +44,11 @@ def gradient_descent(f, init_x, lr, step_num):
     
     return x
 
-initX = np.array([-3.0, 4.0])
-result1 = gradient_descent(function2, init_x=initX, lr=0.1,step_num=100)
-result2 = gradient_descent(function2, init_x=initX, lr=10,step_num=100)
-result3 = gradient_descent(function2, init_x=initX, lr=1e-10,step_num=100)
-print(result1)
-print(result2)
-print(result3)
+# initX = np.array([-3.0, 4.0])
+# result1 = gradient_descent(function2, init_x=initX, lr=0.1,step_num=100)
+# result2 = gradient_descent(function2, init_x=initX, lr=10,step_num=100)
+# result3 = gradient_descent(function2, init_x=initX, lr=1e-10,step_num=100)
+# print(result1)
+# print(result2)
+# print(result3)
 
