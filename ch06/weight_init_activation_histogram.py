@@ -22,12 +22,14 @@ for i in range(hidden_layer_size):
         x = activations[i-1]
 
     # w = np.random.randn(node_num, node_num) * 1
-    w = np.random.randn(node_num, node_num) * 0.01
+    # w = np.random.randn(node_num, node_num) * 0.01
+    # w = np.random.randn(node_num, node_num) / np.sqrt(node_num)   # 使用Xavier初始值
+    w = np.random.randn(node_num, node_num) * np.sqrt(2) / np.sqrt(node_num) # ReLU专用的 He初始值
 
     a = np.dot(x, w)
 
-    z = sigmoid(a)
-    # z = ReLU(a)
+    # z = sigmoid(a)
+    z = ReLU(a)
     # z = tanh(a)
 
     activations[i] = z
