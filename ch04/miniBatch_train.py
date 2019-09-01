@@ -31,7 +31,9 @@ for i in range(iters_num):
     t_batch = t_train[batch_mask]
 
     #计算梯度
+    # 数值为分法求梯度
     # grad = network.numercial_gradient(x_batch, t_batch)
+    # 误差反向传播法求梯度
     grad = network.gradient(x_batch, t_batch) # 高速
 
     #更新参数

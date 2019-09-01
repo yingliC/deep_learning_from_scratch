@@ -1,5 +1,6 @@
 import sys, os
 sys.path.append(os.pardir)
+import numpy as np
 from gradient import numercial_gradient
 from common.functions import *
 
